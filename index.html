@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Capabilities</title>
+    <!-- Login Form -->                                              <section id="user-dashboard" style="display:none;">
+    <h2>Welcome, [Username]</h2>
+    <p>Here you can view your account details and interact with our services.</p>
+    <!-- User-specific options here -->
+</section>
+
+<div id="login-form" style="display:none;">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" placeholder="Username" required><br>
+        <input type="password" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script>
+function showRegistration() {
+    document.getElementById("registration-form").style.display = "block";
+    document.getElementById("login-form").style.display = "none";
+}
+
+function showLogin() {
+    document.getElementById("login-form").style.display = "block";
+    document.getElementById("registration-form").style.display = "none";
+}
+</script>
+    <style>
+        /* Core styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            margin: 10px 10px 20px 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            min-width: 250px;
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .dropdown-content button {
+            width: 100%;
+            padding: 12px 16px;
+            text-align: left;
+            border: none;
+            background-color: #fff;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .dropdown-content button:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 15px;
+            border: none;
+            background-color: #d39999;
+            color: #1a0d0d;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #de6814;
+        }
+        /* New section styles */
+section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* FAQ styling */
+.faq-item h3 {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e4e4e4;
+    margin: 0;
+    font-size: 18px;
+}
+
+.faq-item p {
+    padding: 10px;
+    margin: 0;
+    display: none;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Team section styling */
+.team-member {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>AI Capabilities in Various Sectors</h1>
+
+    <!-- Dropdowns grouped by category -->
+
+    <!-- Supply Chain Optimization -->
+    <div class="dropdown">
+        <button>Supply Chain Optimization</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI predicts raw material shortages to optimize procurement.')">Raw Materials Forecasting</button>
+            <button onclick="alert('AI optimizes transportation logistics for timely delivery.')">Logistics Optimization</button>
+            <button onclick="alert('AI manages inventory to minimize storage costs and prevent stockouts.')">Inventory Management</button>
+            <button onclick="alert('AI tracks market trends and competitors to maintain competitiveness.')">Competitive Analysis</button>
+            <button onclick="alert('AI forecasts demand for raw materials based on market trends.')">Demand Forecasting</button>
+        </div>
+    </div>
+    <!-- Registration & Login -->
+<div id="auth-section">
+    <button onclick="showRegistration()">Register</button>
+    <button onclick="showLogin()">Login</button>
+</div>
+
+<!-- Registration Form -->
+<div id="registration-form" style="display:none;">
+    <h2>Register</h2>
+    <form id="registerForm">
+        <input type="text" placeholder="Username" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="password" placeholder="Password" required><br>
+        <button type="submit">Register</button>
+    </form>
+</div>
+<!-- Regulatory Compliance & Sustainability -->
+    <div class="dropdown">
+        <button>Regulatory Compliance & Sustainability</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI helps develop environmentally compliant products.')">Regulatory Compliance</button>
+            <button onclick="alert('AI evaluates suppliers based on sustainability goals.')">Sustainability Analysis</button>
+            <button onclick="alert('AI predicts the environmental impact of product formulations.')">Predictive Modeling</button>
+            <button onclick="alert('AI streamlines regulatory documentation management.')">Automated Documentation</button>
+        </div>
+    </div>
+
+    <!-- Cost & Risk Management -->
+    <div class="dropdown">
+        <button>Cost & Risk Management</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI optimizes manufacturing to reduce costs.')">Cost Management</button>
+            <button onclick="alert('AI assesses supply chain risks for better planning.')">Risk Management</button>
+            <button onclick="alert('AI identifies cost-saving opportunities in procurement.')">Cost Optimization</button>
+        </div>
+    </div>
+
+    <!-- Technological Integration & Innovation -->
+    <div class="dropdown">
+        <button>Technological Integration & Innovation</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI assists in integrating new production technologies.')">Technological Integration</button>
+            <button onclick="alert('AI analyzes data to predict technology impacts.')">Data Analysis</button>
+            <button onclick="alert('AI simulates production processes for efficiency.')">Process Simulation</button>
+            <button onclick="alert('AI monitors and optimizes new technology integration.')">Real-Time Monitoring</button>
+        </div>
+    </div>
+
+    <!-- Consumer Insights & Marketing -->
+    <div class="dropdown">
+        <button>Consumer Insights & Marketing</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI analyzes customer feedback for product improvement.')">Sentiment Analysis</button>
+            <button onclick="alert('AI tracks consumer behavior across platforms.')">Behavioral Analysis</button>
+            <button onclick="alert('AI segments consumers for targeted marketing.')">Segmentation</button>
+            <button onclick="alert('AI identifies consumer trends to guide product development.')">Trend Identification</button>
+        </div>
+    </div>
+
+    <!-- Logistics & Transportation -->
+    <div class="dropdown">
+        <button>Logistics & Transportation</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI optimizes delivery routes to save time and reduce costs.')">Route Optimization</button>
+            <button onclick="alert('AI tracks shipments in real-time for better coordination.')">Real-Time Tracking</button>
+            <button onclick="alert('AI predicts future demand for better inventory planning.')">Demand Forecasting</button>
+            <button onclick="alert('AI automates delivery scheduling for efficiency.')">Automated Scheduling</button>
+        </div>
+    </div>
+
+    <!-- Inventory Management & Optimization -->
+    <div class="dropdown">
+        <button>Inventory Management & Optimization</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI forecasts demand to align inventory levels.')">Demand Forecasting</button>
+            <button onclick="alert('AI monitors inventory in real-time.')">Real-Time Inventory Tracking</button>
+            <button onclick="alert('AI sets reorder points based on sales data.')">Reorder Point Calculation</button>
+            <button onclick="alert('AI automates inventory replenishment to reduce errors.')">Automated Replenishment</button>
+        </div>
+    </div>
+
+    <!-- Predictive Maintenance & Equipment Monitoring -->
+    <div class="dropdown">
+        <button>Predictive Maintenance & Equipment Monitoring</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI collects real-time data from sensors for monitoring.')">Data Collection</button>
+            <button onclick="alert('AI analyzes data to detect patterns and anomalies.')">Data Analysis</button>
+            <button onclick="alert('AI forecasts equipment failure for proactive maintenance.')">Predictive Modeling</button>
+        </div>
+    </div>
+    <!-- Assuming the CSV file is named "data.csv" and located in the same directory as your HTML file -->
+
+<button onclick="downloadCSV()">Download CSV</button>
+
+<script>
+function downloadCSV() {
+    const link = document.createElement('a');
+    link.href = 'C:\Users\User\Desktop\PolyPredictAI\prompt-target.csv'; // Replace with the path to your CSV file
+    link.download = 'data.csv'; // Name of the file to download
+    link.click();
+}
+<!-- Example embedded CSV button styled like the others -->
+<button onclick="downloadCSV()" style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">
+    Download CSV Data
+</button>
+
+</script>
+
+
+    <!-- Real-Time Data Collection & Quality Control -->
+    <h1>AI-Driven Quality Control and Production Features</h1>
+
+    <div class="dropdown">
+        <button>Real-Time Data Collection</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI gathers real-time data on critical parameters.')">Data Monitoring</button>
+            <button onclick="alert('AI integrates IoT devices for continuous data collection.')">IoT Integration</button>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button>Advanced Analytics</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI detects patterns in production data.')">Pattern Recognition</button>
+            <button onclick="alert('AI detects anomalies for quality control.')">Anomaly Detection</button>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button>Machine Vision</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI inspects products for quality.')">Defect Detection</button>
+            <button onclick="alert('AI ensures precision in quality inspections.')">Precision Inspection</button>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button>Predictive Quality</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI predicts potential quality issues.')">Forecasting Quality Issues</button>
+            <button onclick="alert('AI takes proactive measures to prevent defects.')">Preventive Actions</button>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button>Automated Quality Control</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI automates quality checks for consistency.')">Quality Consistency</button>
+            <button onclick="alert('AI reduces manual inspection needs.')">Inspection Automation</button>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button>Real-Time Alerts</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI issues alerts for immediate corrective action.')">Instant Notification</button>
+            <button onclick="alert('AI minimizes defect impact through alerts.')">Operator Alerts</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button>Cost Reduction</button>
+        <div class="dropdown-content">
+            <button onclick="alert('AI reduces costs related to product rework and scrap.')">Rework Minimization</button>
+            <button onclick="alert('AI lowers inspection costs through automation.')">Cost of Quality</button>
+        </div>
+    </div>
+    <section id="ownership">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <h3>Amit Syngle</h3>
+            <p>Chief Executive Officer</p>
+            <img src="images/Asian-Paints-Amit-Syngle.jpg" alt="Amit Syngle">
+        </div>
+        <div class="team-member">
+            <h3>Manish chowksi</h3>
+            <p>Managing Director</p>
+            <img src="images/Manish-Chokshi.jpg" alt="Manish-Chokshi">
+        </div>
+        <!-- Add more team members as needed -->
+    </section>
+    
+    <section id="licensing">
+        <h2>Licenses & Certifications</h2>
+        <ul>
+            <li>ISO 9001: Quality Management</li>
+            <li>ISO 14001: Environmental Management</li>
+            <li>GDPR Compliant</li>
+        </ul>
+    </section>
+    <section id="legal">
+        <h2>Legal Information</h2>
+        <h3><a href="privacy-policy.html">Privacy Policy</a></h3>
+        <p>Our privacy policy outlines how we handle your data.</p>
+        <h3><a href="terms-of-service.html">Terms of Service</a></h3>
+        <p>Read our terms to understand your rights and responsibilities.</p>
+    </section>
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)">What services do you offer?</h3>
+            <p style="display:none;">We offer a variety of AI-driven solutions.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)">How can I contact support?</h3>
+            <p style="display:none;">You can reach us through the contact form or via support@company.com.</p>
+        </div>
+    </section>
+    
+    <script>
+    function toggleFAQ(element) {
+        var answer = element.nextElementSibling;
+        answer.style.display = answer.style.display === "none" ? "block" : "none";
+    }
+    </script>
+    <!-- Placeholder for Live Chat -->
+<section id="live-chat">
+    <h2>Need Help?</h2>
+    <button onclick="startChat()">Start Chat</button>
+</section>
+
+<script>
+function startChat() {
+    alert("Connecting you to a support representative...");
+    // This would connect to a live chat API or system.
+}
+</script>
+<section id="news">
+    <h2>Latest News</h2>
+    <article>
+        <h3>AI in Manufacturing: A Game Changer</h3>
+        <p>Discover how AI is reshaping the manufacturing industry...</p>
+        <a href="blog/ai-in-manufacturing.html">Read more</a>
+    </article>
+</section>
+
+        
+    
+
+</body>
+</html>

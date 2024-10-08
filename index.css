@@ -1,0 +1,154 @@
+/* Core styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px 20px 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content button {
+    width: 100%;
+    padding: 12px 16px;
+    text-align: left;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    background-color: #d39999;
+    color: #1a0d0d;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #de6814;
+}
+
+/* New section styles */
+section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* FAQ styling */
+.faq-item h3 {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e4e4e4;
+    margin: 0;
+    font-size: 18px;
+}
+
+.faq-item p {
+    padding: 10px;
+    margin: 0;
+    display: none;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Team section styling */
+.team-member {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+form {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Auth section buttons */
+#auth-section button {
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+
+/* Chat and News section styling */
+#live-chat, #news {
+    #live-chat button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+}
+
+article {
+    margin-top: 10px;
+}
+
+article a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
